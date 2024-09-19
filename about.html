@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="index.html">BLDJY</a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          </ul>
+      </nav>
+      <div class="wrapper">
+        <div class="text-box">
+          <h1>About me</h1>
+          <p>Hi, I'm Andrew, a computer science student of with a pasion for programming and technology. My Journey began at a young age when I played many video games and got curious how it worked. What started as curiousity quickly evolved into my love for coding, and I wrote my first website during Grade 9 as a project for my ict project.</p>
+          <p>Currently, I'm pursuing my degree at National University-Manila, where I specialize in machine learning. I enjoy creating programs and continoiusly improve my problem-solving skills. Because I believe technology has the power to solve many real-world pronlemsm and I aspire to contribute in innovations that can make a difference.</p>
+          <p>In my free time, I spend my time self-learning about programming languages like C and Java. When I'm not coding, you might find me playing video games with friends or laying down scrolling through Tiktok.</p>
+        </div>
+      </div>
+    <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+</body>
+</html>

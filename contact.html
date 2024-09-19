@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Simple Website</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+<body>
+    <nav class="nav">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="index.html">BLDJY</a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          </ul>
+      </nav>
+      <div class="wrapper">
+        <div class="text-box">
+          <h1>Contact Page</h1>
+          <p>I'd love to hear from you! If you have questions, colaboration ideas, or just want to say hi feel free to reach out.</p>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; <a href="mailto:andrewjaybaladjay3176@gmail.com">
+            <ion-icon name="mail"></ion-icon>
+          </a></p>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; <a href="https://web.facebook.com/andrewjay.baladjay.73"></a>
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></p>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.instagram.com/fiftycat3176/"></a>
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></p>
+          </div>
+      </div>
+    <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
